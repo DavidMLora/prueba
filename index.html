@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Página Web</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#2563eb,#1e40af);
+      color:white;
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1.2rem;
+      opacity:0.9;
+    }
+
+    nav{
+      background:#111827;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#60a5fa;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      border-radius:12px;
+      padding:25px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      color:#2563eb;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      padding:12px 20px;
+      background:#2563eb;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#1d4ed8;
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mi Página Web</h1>
+    <p>Diseño moderno en un solo archivo HTML</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Portafolio</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <section class="container">
+    <div class="cards">
+
+      <div class="card">
+        <h3>Diseño Web</h3>
+        <p>
+          Creamos páginas modernas, rápidas y adaptables para cualquier dispositivo.
+        </p>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+
+      <div class="card">
+        <h3>Desarrollo</h3>
+        <p>
+          Aplicaciones web dinámicas usando tecnologías modernas y escalables.
+        </p>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+
+      <div class="card">
+        <h3>Marketing</h3>
+        <p>
+          Estrategias digitales para aumentar tu presencia y ventas en internet.
+        </p>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Mi Página Web - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
